@@ -5,11 +5,11 @@ this digital-harbor system made by laravel framework as back end and used free o
 
 Clone the repository
 
-    git clone git@gitlab.com:coder0010/digital-harbor
+    git clone git@github.com:coder0010/digital-harbor
 
 or you can download it by the desktop application of github
 
-https://gitlab.com/coder0010/digital-harbor
+https://github.com/coder0010/digital-harbor
 
 Switch to the repo folder
 
