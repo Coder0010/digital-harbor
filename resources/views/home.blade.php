@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <div class="alert alert-info">
+        <div class="alert alert-warning">
             make sure if u left this site for 30 u will be logout
         </div>
         <div class="card">
@@ -65,12 +65,15 @@
 
             function resetTimer() {
                 clearTimeout(time);
-                time = setTimeout(logout, 30000)
-                // 1000 * 30 min نص ساعة
+                time = setTimeout(logout, miliseconds(0 , 30, 0))
             }
         };
         window.onload = function() {
             inactivityTime();
+        }
+
+        function miliseconds(hrs,min,sec) {
+            return((hrs* 60 * 60 +min * 60 + sec) *1000);
         }
     </script>
 @endsection
