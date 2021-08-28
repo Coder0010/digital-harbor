@@ -62,7 +62,6 @@ class HomeController extends Controller
     {
         try {
             DB::beginTransaction();
-            Order::truncate();
             for ($i=0; $i < 20; $i++) {
                 Order::create([
                     "name"   => Str::random("10"),
